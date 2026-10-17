@@ -1,4 +1,4 @@
-﻿// Apply saved theme before styles load to avoid a flash.
+// Apply saved theme before styles load to avoid a flash.
 (function () {
   try {
     var saved = localStorage.getItem("ada-theme");

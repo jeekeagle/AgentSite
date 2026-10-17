@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   // Theme toggle
   var toggle = document.querySelector("[data-theme-toggle]");
   if (toggle) {
