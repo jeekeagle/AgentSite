@@ -1,0 +1,243 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>关于课程 · 智能体设计与应用</title>
+  <meta name="description" content="《智能体设计与应用》课程介绍：为什么开这门课、学完之后能做什么、教学团队、学习社区、更新日志。" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#fafaf9" />
+  <script src="assets/theme.js"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1c1917"/><circle cx="20" cy="22" r="5" fill="#fbbf24"/><circle cx="44" cy="22" r="5" fill="#fef3c7"/><circle cx="32" cy="44" r="5" fill="#fbbf24"/><path d="M22 25 L31 41 M42 25 L33 41 M25 22 L39 22" stroke="#fef3c7" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span class="brand-name">智能体设计与应用</span>
+        <span class="brand-caption">Agent Design & Application</span>
+      </a>
+      <nav class="navigation" aria-label="主导航">
+        <a href="./syllabus/">课程大纲</a>
+        <a href="./get-started/">快速开始</a>
+        <a href="./showcase/">学生作品</a>
+        <a href="./projects/">课程项目</a>
+        <a href="./faq/">FAQ</a>
+        <a href="./about/" class="active">关于</a>
+        <a class="nav-cta" href="./get-started/">开始学习 →</a>
+      </nav>
+      <div class="header-social">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换主题">
+          <svg class="theme-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 13a9 9 0 0 1-9.9-9.9A9 9 0 1 0 20.9 13Z"/></svg>
+          <svg class="theme-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        </button>
+        <a href="https://github.com/jeekeagle/AgentSite" aria-label="GitHub"><svg width="22" height="22" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <p class="eyebrow">关于课程</p>
+        <h1>这门课是谁、为了谁</h1>
+        <p>《智能体设计与应用》是一门通识课。它的目标不是培养 AI 研究员，是让每一个专业的同学都能用 Agent 解决自己领域的问题。</p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <details class="toc-bar" open>
+        <summary>本页目录</summary>
+        <ul>
+          <li><a href="#why">为什么开这门课</a></li>
+          <li><a href="#goal">课程目标</a></li>
+          <li><a href="#team">教学团队</a></li>
+          <li><a href="#community">学习社区</a></li>
+          <li><a href="#office-hours">Office Hours</a></li>
+          <li><a href="#faq-agent-vs-llm">两分钟区别</a></li>
+          <li><a href="#changelog">更新日志</a></li>
+          <li><a href="#license">授权与引用</a></li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="container section" id="why">
+      <h2>为什么开这门课</h2>
+      <p>2023 年之后，「Agent」这个词从论文里走出来，到了所有人嘴边。但绝大多数介绍它的内容，要么是给研究员的论文综述，要么是给老板的 PPT 故事，没有一份给「想用它但还没用过」的人。</p>
+      <p>这门课想做的就是这件事：一份<strong>对所有人友好、对工程师也尊重</strong>的入门课。文科生能听懂、能用上；工科生能上手、能搭出来。</p>
+      <p>我们相信：未来五年最被需要的技能，不是「懂 AI 原理」，是「会用 AI 干活」。这门课就是冲着后者去的。</p>
+    </section>
+
+    <section class="container section" id="goal">
+      <h2>课程目标</h2>
+      <p>学完这门课，你能——</p>
+      <ul>
+        <li>用 5 分钟讲清楚 Agent / 大模型 / 工作流的区别。</li>
+        <li>亲手搭一个能调用 5 个工具的本地 Agent。</li>
+        <li>用 RAG 让 Agent 读你的私人资料。</li>
+        <li>用多智能体编排搭一个「研究员 + 写手 + 审稿人」小队。</li>
+        <li>写出评测脚本，看清 Agent 哪里好、哪里坏。</li>
+        <li>意识到 Agent 的三类风险（注入 / 越权 / 幻觉），并做出防御。</li>
+        <li>用低代码工具搭一个能上线的最小版本。</li>
+        <li>带领一个 3 人小组，在 4 周内交付一个真人在用的 Agent。</li>
+      </ul>
+    </section>
+
+    <section class="container section" id="team">
+      <h2>教学团队</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>主讲教师</h3>
+          <p>课程由计算机学院 / 通识教育中心联合开设。主讲教师背景横跨 NLP、HCI、教育技术，长期做 Agent 工程化与教育应用。</p>
+          <p><a href="mailto:ada@your-university.edu">联系主讲 →</a></p>
+        </div>
+        <div class="card">
+          <h3>助教组</h3>
+          <p>6 名助教轮值 Office Hours，分管编程方向、产品方向、行业案例。每位助教负责一个学生小组的答疑。</p>
+          <p><a href="#community">加入答疑群 →</a></p>
+        </div>
+        <div class="card">
+          <h3>客座讲师</h3>
+          <p>第 10 章邀请 4–6 位业界讲师，每人讲一个真实 Agent 项目案例。讲师来自产品 / 工程 / 设计 / 运营 / 学术各岗位。</p>
+        </div>
+        <div class="card">
+          <h3>贡献者</h3>
+          <p>课程讲义与代码全部开源，欢迎提 PR / Issue。所有贡献者会在<a href="https://github.com/jeekeagle/AgentSite">仓库</a>主页列出。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="community">
+      <h2>学习社区</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>GitHub Discussions</h3>
+          <p>公开讨论区，提问、答疑、贴作业互评。助教承诺 24 小时内回复。</p>
+          <p><a href="https://github.com/jeekeagle/AgentSite/discussions">进入 Discussions →</a></p>
+        </div>
+        <div class="card">
+          <h3>微信学习群</h3>
+          <p>每周三晚 8 点「Agent 夜话」直播答疑。群里分享案例、招实习、内推、约饭。</p>
+          <p>加群方式：扫描选课通知里的二维码，或发邮件到 <code>ada@your-university.edu</code> 申请。</p>
+        </div>
+        <div class="card">
+          <h3>校友圈</h3>
+          <p>往届同学的 Agent 项目库。找队友、找外包、找灵感、找吐槽。</p>
+          <p><a href="./showcase/">浏览作品 →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="office-hours">
+      <h2>Office Hours</h2>
+      <p>每周四下午 14:00–16:00，助教轮值。带着你的代码 / 想法 / 困惑来，不限形式。</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>时段</th><th>主题</th><th>助教</th></tr></thead>
+          <tbody>
+            <tr><td>14:00 – 14:45</td><td>编程方向：环境、trace、调试</td><td>李助教</td></tr>
+            <tr><td>14:45 – 15:00</td><td>自由讨论</td><td>—</td></tr>
+            <tr><td>15:00 – 15:45</td><td>产品方向：选题、用户访谈、低代码</td><td>王助教</td></tr>
+            <tr><td>15:45 – 16:00</td><td>项目答辩彩排</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>地点：学院楼 305。也可以提前 24 小时预约线上 Zoom，发邮件到 <code>ada@your-university.edu</code>。</p>
+    </section>
+
+    <section class="container section" id="faq-agent-vs-llm">
+      <h2>两分钟区别：Agent 和大模型</h2>
+      <p>这是这门课学生最常问的问题，也是最重要的概念。展开讲一讲。</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>大模型 = 一个会说话的函数</h3>
+          <p>输入一段文本，输出一段文本。<strong>它没有「世界」的概念</strong>，没有「接下来做什么」的概念。它的全部能力在「读一段话、写一段话」。</p>
+          <p>用起来像：开一个对话框，你说一句，它回一句。它不会主动去查邮件、读文件、订机票——除非你把那些信息贴进对话框。</p>
+        </div>
+        <div class="card">
+          <h3>Agent = 一个会做事的循环</h3>
+          <p>它不仅会说话，还会<strong>想接下来做什么，然后调用工具去做，看结果，再决定下一步</strong>。它的能力来自「思考 + 工具 + 记忆」的循环，不只是模型本身的文字能力。</p>
+          <p>用起来像：你说「帮我订明天去上海的差旅」，它自己去查日历、查航班、查酒店价格、问你偏好、发邮件确认。人不被锁在对话框里。</p>
+        </div>
+      </div>
+
+      <h3>一个具体的例子</h3>
+      <p>你说：<em>「我们公司去年招了多少人？」</em></p>
+
+      <h4>大模型（ChatGPT）的反应</h4>
+      <p>它会说：「抱歉，我没有你公司的数据，无法回答。」——它说对了，但没用。</p>
+
+      <h4>Agent 的反应</h4>
+      <ol>
+        <li>想：「用户想知道公司去年招聘数据，我需要查 HR 系统。」</li>
+        <li>调用工具：<code>query_hr_system(table='recruits', year=2024)</code>。</li>
+        <li>得到结果：「去年共入职 47 人，其中工程师 28 人。」</li>
+        <li>回答：「去年你们公司入职 47 人，工程师 28 人。要看具体名单吗？」</li>
+        <li>如果你说「要」，它再调一次工具，把名单拉出来。</li>
+      </ol>
+
+      <p>区别不在「会不会说话」——两个都会说话。区别在「会不会自己去拿数据」。Agent 的关键不是更聪明，是<strong>有手有脚</strong>。</p>
+
+      <div class="callout">
+        <p><strong>记住一句话：</strong>大模型是把嘴给电脑，Agent 是把整个实习生给电脑。</p>
+      </div>
+    </section>
+
+    <section class="container section" id="changelog">
+      <h2>更新日志</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>日期</th><th>版本</th><th>变更</th></tr></thead>
+          <tbody>
+            <tr><td>2026-09</td><td>v2026.1</td><td>首批上线：12 章大纲、3 条学习路径、6 个学生作品案例、4 周项目说明。</td></tr>
+            <tr><td>2026-03</td><td>v2026.0 beta</td><td>内部试用版。3 个班级共 87 名学生参与。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="container section" id="license">
+      <h2>授权与引用</h2>
+      <p>本站所有讲义、代码、案例以 <strong>CC BY-SA 4.0</strong> 协议发布。你可以自由复制、修改、再发布，只要署上来源、用同样的协议。</p>
+      <p>代码部分额外采用 <strong>MIT License</strong>。引用本站时请写：</p>
+      <div class="code-block">
+        <button class="copy-button" type="button">复制</button>
+<pre><code>《智能体设计与应用》课程组. (2026). 智能体设计与应用 [课程站点].
+https://ada.your-university.edu</code></pre>
+      </div>
+      <p>站点设计参考 <a href="https://rea.tools/" rel="noopener">rea.tools</a> 的文档站风格；插画与文案为本课程原创。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p style="margin:0;color:var(--ink);font-family:var(--font-serif);font-weight:600;">智能体设计与应用</p>
+        <p class="footer-meta">本站以 CC BY-SA 4.0 发布。</p>
+      </div>
+      <div>
+        <div class="footer-links">
+          <a href="./syllabus/">课程大纲</a>
+          <a href="./get-started/">快速开始</a>
+          <a href="./showcase/">学生作品</a>
+          <a href="./projects/">课程项目</a>
+          <a href="./faq/">FAQ</a>
+          <a href="./about/">关于</a>
+          <a href="https://github.com/jeekeagle/AgentSite">GitHub</a>
+        </div>
+        <p class="footer-meta">© 2026 智能体设计与应用 课程组</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="back-to-top" href="#top" aria-label="回到顶部"><span aria-hidden="true">↑</span> 顶部</a>
+</body>
+</html>
+
+
+

@@ -1,0 +1,178 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ · 智能体设计与应用</title>
+  <meta name="description" content="《智能体设计与应用》常见问题：关于 Agent、课程、作业、考试、AI 工具本身。" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#fafaf9" />
+  <script src="assets/theme.js"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1c1917"/><circle cx="20" cy="22" r="5" fill="#fbbf24"/><circle cx="44" cy="22" r="5" fill="#fef3c7"/><circle cx="32" cy="44" r="5" fill="#fbbf24"/><path d="M22 25 L31 41 M42 25 L33 41 M25 22 L39 22" stroke="#fef3c7" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span class="brand-name">智能体设计与应用</span>
+        <span class="brand-caption">Agent Design & Application</span>
+      </a>
+      <nav class="navigation" aria-label="主导航">
+        <a href="./syllabus/">课程大纲</a>
+        <a href="./get-started/">快速开始</a>
+        <a href="./showcase/">学生作品</a>
+        <a href="./projects/">课程项目</a>
+        <a href="./faq/" class="active">FAQ</a>
+        <a href="./about/">关于</a>
+        <a class="nav-cta" href="./get-started/">开始学习 →</a>
+      </nav>
+      <div class="header-social">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换主题">
+          <svg class="theme-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 13a9 9 0 0 1-9.9-9.9A9 9 0 1 0 20.9 13Z"/></svg>
+          <svg class="theme-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        </button>
+        <a href="https://github.com/jeekeagle/AgentSite" aria-label="GitHub"><svg width="22" height="22" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <p class="eyebrow">常见问题</p>
+        <h1>问得最多的那些事</h1>
+        <p>找不到答案？去 <a href="https://github.com/jeekeagle/AgentSite/discussions">课程 Discussions</a> 发帖，助教 24 小时内回。</p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h2>关于 Agent 本身</h2>
+
+      <details class="faq">
+        <summary>Agent 和大模型（ChatGPT）到底有什么区别？</summary>
+        <p>两分钟答案：大模型是一个会说话的函数，给它输入它就吐字；Agent 是一个会做事的循环，它会想「我该用什么工具」→ 调用工具 → 看结果 → 再决定下一步。一个会说话，一个会做事。</p>
+        <p>打比方：大模型是一个百科全书，Agent 是一个会查这本百科全书的图书管理员。管理员还能打电话、订机票、写代码——只要你把工具给它。</p>
+        <p>更长版本在<a href="./about/#faq-agent-vs-llm">这里</a>。</p>
+      </details>
+
+      <details class="faq">
+        <summary>Agent 和「工作流」（Workflow）、RPA、机器人有什么区别？</summary>
+        <p>工作流和 RPA 是<strong>人定义好每一步</strong>，机器照做；Agent 是<strong>机器自己决定每一步</strong>。前者死板但稳定，后者灵活但不可控。现实中好的系统往往两者结合：人定义边界，Agent 在边界内自由发挥。</p>
+      </details>
+
+      <details class="faq">
+        <summary>为什么 2023 年之后 Agent 这个词突然火了？</summary>
+        <p>三件事撞在了一起：(1) GPT-4 这一代模型终于能稳定做多步推理；(2) Function Calling 接口标准化了，工具调用变成了「一行代码」；(3) LangChain 等框架让搭一个 Agent 从 3 周变成了 3 小时。三件事凑齐，「Agent」才从论文里的概念变成了人人都能搭的东西。</p>
+      </details>
+
+      <details class="faq">
+        <summary>Agent 真的能干活吗？会不会只是噱头？</summary>
+        <p>看场景。在「明确规则 + 大量重复 + 风险可控」的活上，Agent 已经比人便宜；在「模糊目标 + 需要审美 + 高风险」的活上，Agent 还是辅助。课程第 10 章会按行业拆开讲。</p>
+      </details>
+
+      <details class="faq">
+        <summary>以后 Agent 会取代人吗？我学这个还有意义吗？</summary>
+        <p>比起「Agent 取代人」，更可能发生的是「会用 Agent 的人取代不会用 Agent 的人」。这门课不是教你对抗 AI，是教你和它一起干活。不会用 AI 的同学，毕业后会发现自己在和会用 AI 的同学竞争同一个岗位。</p>
+      </details>
+    </section>
+
+    <section class="container section">
+      <h2>关于课程</h2>
+
+      <details class="faq">
+        <summary>我是文科生 / 非计算机专业，能学吗？</summary>
+        <p>能，但要走「🥚 零基础路径」或「🐓 产品路径」。这两个路径不需要写代码也能完成 90% 的学习任务，最后 10% 的代码作业可以找队友帮你写、你帮他们理解业务——这正是课程项目组队的本意。</p>
+      </details>
+
+      <details class="faq">
+        <summary>课程有期中期末吗？</summary>
+        <p>有一次期中 demo（第 7 周前），一次期末项目（第 12 周）。每周还有一次小作业。具体看<a href="./syllabus/#exam">大纲</a>。</p>
+      </details>
+
+      <details class="faq">
+        <summary>我可以旁听吗？</summary>
+        <p>可以。所有讲义、所有代码、所有 showcase 都公开。旁听同学不需要交作业，但欢迎参加 Office Hours 和讨论区。</p>
+      </details>
+
+      <details class="faq">
+        <summary>课程内容会更新吗？</summary>
+        <p>每学期开学前更新一次。Agent 领域变化很快，去年的最佳实践今年可能就是反模式。所有变更会写进 <a href="./about/#changelog">更新日志</a>。</p>
+      </details>
+    </section>
+
+    <section class="container section">
+      <h2>关于作业与项目</h2>
+
+      <details class="faq">
+        <summary>作业可以用 AI 帮忙做吗？</summary>
+        <p>可以用，但有两个硬性要求：(1) 你必须能讲清楚每一行代码 / 每一个提示词为什么要这么写；(2) 你必须在 README 里写明哪部分是 AI 写的、你改了哪里、为什么改。把 AI 当队友，不当替身。</p>
+      </details>
+
+      <details class="faq">
+        <summary>项目必须用最新最强的模型吗？</summary>
+        <p>不必。评分看问题价值、技术深度、可用性，不看你用的是 GPT-5 还是本地 7B 模型。预算紧张的同学可以用 DeepSeek / Qwen / 智谱免费额度，作业完全够用。</p>
+      </details>
+
+      <details class="faq">
+        <summary>项目 idea 被同学抢先了怎么办？</summary>
+        <p>这是好事——说明这个 idea 真有问题。你们可以合并组，或者各做各版相互对比。「同一个 idea 不同实现」的对比展示，比孤零零一个项目分数更高。</p>
+      </details>
+    </section>
+
+    <section class="container section">
+      <h2>关于 AI 工具本身</h2>
+
+      <details class="faq">
+        <summary>用国产大模型还是 OpenAI / Anthropic？</summary>
+        <p>取决于场景。复杂推理（数学 / 代码 / 规划）目前 GPT-4 / Claude 还领先；中文写作、角色扮演、垂直行业知识，DeepSeek / Qwen / 智谱已经够用且更便宜。课程不绑定任何一家，按性价比选。</p>
+      </details>
+
+      <details class="faq">
+        <summary>我的数据会上传到模型公司吗？</summary>
+        <p>看条款。OpenAI / Anthropic 默认不拿你的数据训练（API 调用），但会留 30 天用于安全审计。敏感数据请用本地模型（Ollama + Qwen / Llama）或私有部署。</p>
+      </details>
+
+      <details class="faq">
+        <summary>本地能跑得动 Agent 吗？</summary>
+        <p>看模型。7B 模型 + 简单工具调用，4090 显卡 / M2 Max 都能跑。70B 模型要双 A100 / H100，或者上量化方案。课程里大部分例子用 7B–14B 跑得动。</p>
+      </details>
+    </section>
+
+    <section class="container section">
+      <div class="callout">
+        <p><strong>还没找到答案？</strong>去 <a href="https://github.com/jeekeagle/AgentSite/discussions">GitHub Discussions</a> 发帖，或者发邮件到 <code>ada@your-university.edu</code>。我们通常 24 小时内回。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p style="margin:0;color:var(--ink);font-family:var(--font-serif);font-weight:600;">智能体设计与应用</p>
+        <p class="footer-meta">本站以 CC BY-SA 4.0 发布。</p>
+      </div>
+      <div>
+        <div class="footer-links">
+          <a href="./syllabus/">课程大纲</a>
+          <a href="./get-started/">快速开始</a>
+          <a href="./showcase/">学生作品</a>
+          <a href="./projects/">课程项目</a>
+          <a href="./faq/">FAQ</a>
+          <a href="./about/">关于</a>
+          <a href="https://github.com/jeekeagle/AgentSite">GitHub</a>
+        </div>
+        <p class="footer-meta">© 2026 智能体设计与应用 课程组</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="back-to-top" href="#top" aria-label="回到顶部"><span aria-hidden="true">↑</span> 顶部</a>
+</body>
+</html>
+
+
+
