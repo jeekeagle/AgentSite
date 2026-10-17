@@ -29,7 +29,7 @@
       if (!text) return;
       navigator.clipboard.writeText(text).then(function () {
         var prev = btn.textContent;
-        btn.textContent = "已复制";
+        btn.textContent = "宸插鍒?;
         btn.classList.add("copied");
         setTimeout(function () { btn.textContent = prev; btn.classList.remove("copied"); }, 1500);
       });
@@ -69,4 +69,32 @@
     window.addEventListener("scroll", onScrollToc, { passive: true });
     onScrollToc();
   }
+})();
+
+
+// On this page: highlight current section as user scrolls (home page)
+(function () {
+  var nav = document.querySelector("[data-home-nav]");
+  if (!nav) return;
+  var current = nav.querySelector("[data-home-nav-current]");
+  var links = nav.querySelectorAll(".home-nav-links a");
+  var sections = Array.from(links).map(function (a) {
+    var id = a.getAttribute("href").slice(1);
+    return { id: id, el: document.getElementById(id), label: a.textContent.trim() };
+  }).filter(function (s) { return s.el; });
+
+  function update() {
+    var top = window.scrollY + 120;
+    var active = sections[0];
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i].el.offsetTop <= top) active = sections[i];
+    }
+    if (current && active) current.textContent = active.label;
+    links.forEach(function (a) {
+      if (a.getAttribute("href") === "#" + active.id) a.setAttribute("aria-current", "location");
+      else a.removeAttribute("aria-current");
+    });
+  }
+  window.addEventListener("scroll", update, { passive: true });
+  update();
 })();
